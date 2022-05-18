@@ -1,0 +1,28 @@
+@media(min-width:768px){
+    .product-info{
+        display:block;
+        font-size: 1.6rem;
+        color: black;
+    }
+}
+
+.error{
+    color:red;
+}
+
+
+.product-info{
+    background-color: rgba(221, 213, 213, 0.89);
+    border: 1px solid black;
+    width:fit-content;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+span{
+    font-weight: bold;
+}
+
+
+

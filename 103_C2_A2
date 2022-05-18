@@ -1,0 +1,37 @@
+////////////////////////////////////////////
+// Declaration of variables
+////////////////////////////////////////////
+let productName = prompt("Please enter the product name");
+let productPrice = prompt("please enter the amount you will like to pay for the product: ");
+let productQuantity = prompt("Please enter the quantity you wish to purchase");
+
+let subTotal = 0;
+let Total = 0;
+let taxes = 0;
+
+/////////////////////////////////////////////////////
+// tax for California near Calexico (92231)
+////////////////////////////////////////////////////
+const SALES_TAX=0.085;
+
+
+///////////////////////////////////////////////////
+// Calculate subtotal, taxes, total price with tax
+//////////////////////////////////////////////////
+subTotal = productPrice*productQuantity;
+taxes = productPrice*SALES_TAX;
+Total = subTotal+taxes;
+
+
+////////////////////////////////////////////
+// Display on HTML the result
+////////////////////////////////////////////
+document.write(
+    `
+    <div class="product-info">
+        <p><span>You've purchased ${productQuantity} of ${productName} at ${productPrice} each</span></p>
+        <p><span>Your grand Total is:</span> ${Total}, including taxes (${taxes})</p>
+
+    </div>
+    `
+)
